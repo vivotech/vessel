@@ -1,0 +1,6 @@
+@if (status(); as status) {
+<h1>{{ status.name }}</h1>
+<h4>v{{ status.version }}</h4>
+<h5>{{ status.uptime / 60 | number : ".0-0" }}m</h5>
+
+}
